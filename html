@@ -1,0 +1,110 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script src="https://kit.fontawesome.com/a14ae32021.js" crossorigin="anonymous"></script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>This one is for my bunny</title>
+
+<style type="text/css">
+@font-face {
+	font-family: digit;
+	src: url('digital-7_mono.ttf') format("truetype");
+}
+</style>
+<link href="css/default.css" type="text/css" rel="stylesheet">
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/garden.js"></script>
+<script type="text/javascript" src="js/functions.js"></script>
+
+</head>
+
+<body>
+
+<div id="mainDiv">
+	<div id="content">
+		<div id="code">
+			<span class="comments">/**</span><br />
+			<span class="space"/><span class="comments"> <p style="color: thistle;" >*THE CODE OF LOVE   ₍^. .^₎⟆</span><br />
+			<span class="space"/><span class="comments">*/</span><br />
+			<p style="color: lightpink;">Hai my pretty baby sha !!!<br />
+			<p style="color: lightyellow;">Do you remember the day we first talk?<br /> 
+			<span class="comments"> <p style="color: lightcoral;">// February 5, 2025 Wednesday.</p>   </span><br /> 
+            <p style="color: lightpink;">From that moment;<br />
+			<span class="comments"> <p style="color: lightyellow;">// A spark began to glow, like tha first star to appear at dusk</span><br /> <p style="color: lightcoral;">
+			Your everything got imprinted in my heart;<br />
+			<p style="color: lightpink;">As the time went by;<br />
+			<p style="color: lightyellow;">We journeyed to truly understand each other's hearts<br />
+			<p style="color: lightcoral;" >A journey from infatuation to lasting love;<br />
+			<p style="color: lightpink;">Growing stronger together;<br />
+			<p style="color: lightyellow;" >Every step of the way<br />
+			<span class="comments"><p style="color: lightcoral;">// Thank you, baby for staying with me</span><br />
+			<p style="color: lightpink;"> I will always love you, forever and always. <br />
+			<br>
+			<br>
+			<p style="color: thistle;">All I want to say is:<br />
+			Every moment with you has led me to this answer;<br />
+			────୨ৎ──── <br>
+            Yes, a thousand times YES!<br /> 
+            As if the universe itself conspired to bring us here.<br /> 
+			˙ . ꒷ 🍰 . 𖦹˙—<br /> 
+            <br>
+            <br>
+            <br>
+            <br>
+			<p style="color: lightred;">Now If you want to hug me you can touch the heart below<br />
+			<br>
+			<span id="heartspan">
+			<a href="https://i.pinimg.com/736x/f0/0c/52/f00c5292754ccd596b5f980f5e763cf8.jpg"><i class="fas fa-heart" id="icon"></i></a>
+			</span>
+		</div>
+		<div id="loveHeart">
+			<canvas id="garden"></canvas>
+			<div id="words">
+				<div id="messages">
+					<p style="color: purple;"> FOREVER TOGETHER 𝜗𝜚⋆₊˚
+					<div id="elapseClock"></div>
+				</div>
+				<div id="loveu">
+					<p style="color: lightcoral;"> I LOVE YOU SO MUCH 🐇<br/>
+					<div class="signature"> <p style="color: hotpink;"> ~ UNO</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript">
+var offsetX = $("#loveHeart").width() / 2;
+var offsetY = $("#loveHeart").height() / 2 - 55;
+var together = new Date();
+together.setFullYear(2025, 2, 5);
+together.setHours(16);
+together.setMinutes(30);
+together.setSeconds(0);
+together.setMilliseconds(0);
+
+if (!document.createElement('canvas').getContext) {
+	var msg = document.createElement("div");
+	msg.id = "errorMsg";
+	msg.innerHTML = "Your browser doesn't support HTML5!<br/>Recommend use Chrome 14+/IE 9+/Firefox 7+/Safari 4+"; 
+	document.body.appendChild(msg);
+	$("#code").css("display", "none")
+	$("#copyright").css("position", "absolute");
+	$("#copyright").css("bottom", "10px");
+	document.execCommand("stop");
+} else {
+	setTimeout(function () {
+		startHeartAnimation();
+	}, 5000);
+
+	timeElapse(together);
+	setInterval(function () {
+		timeElapse(together);
+	}, 500);
+
+	adjustCodePosition();
+	$("#code").typewriter();
+}
+</script>
+</body>
+</html>
